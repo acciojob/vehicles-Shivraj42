@@ -24,7 +24,7 @@ public class F1 extends Car {
          */
         if(!isManual()){
             if(newSpeed==0) stop();
-            else  changeSpeed(newSpeed, getCurrentDirection());
+            else if(newSpeed>0) move(newSpeed, getCurrentDirection());
             return;
         }
         if(newSpeed == 0) {
