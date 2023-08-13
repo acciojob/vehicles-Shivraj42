@@ -29,27 +29,27 @@ public class F1 extends Car {
             setCurrentGear(1);
         }
         //for all other cases, change the gear accordingly
-        if(!isManual()){
-            if (newSpeed>0 && newSpeed<=50){
-                setCurrentGear(1);
-            }
-            if (newSpeed>50 && newSpeed<=100) {
-                setCurrentGear(2);
-            }
-            if (newSpeed>100 && newSpeed<=150) {
-                setCurrentGear(3);
-            }
-            if (newSpeed>150 && newSpeed<=200) {
-                setCurrentGear(4);
-            }
-            if (newSpeed>200 && newSpeed<=250) {
-                setCurrentGear(5);
-            }
-            if (newSpeed>250) {
-                setCurrentGear(6);
-            }
-        }
-        else{
+//        if(isManual()){
+//            if (newSpeed>0 && newSpeed<=50){
+//                setCurrentGear(1);
+//            }
+//            if (newSpeed>50 && newSpeed<=100) {
+//                setCurrentGear(2);
+//            }
+//            if (newSpeed>100 && newSpeed<=150) {
+//                setCurrentGear(3);
+//            }
+//            if (newSpeed>150 && newSpeed<=200) {
+//                setCurrentGear(4);
+//            }
+//            if (newSpeed>200 && newSpeed<=250) {
+//                setCurrentGear(5);
+//            }
+//            if (newSpeed>250) {
+//                setCurrentGear(6);
+//            }
+//        }
+//        else{
             if (newSpeed>0 && newSpeed<=50){
                 changeGear(1);
             }
@@ -68,7 +68,7 @@ public class F1 extends Car {
             if (newSpeed>250) {
                 changeGear(6);
             }
-        }
+//        }
 
 
         if(newSpeed > 0) {
