@@ -23,8 +23,7 @@ public class F1 extends Car {
          * speed more than 250: gear 6
          */
         if(!isManual()){
-            if(newSpeed==0) stop();
-            else if(newSpeed>0) move(newSpeed, getCurrentDirection());
+            move(newSpeed, getCurrentDirection());
             return;
         }
         if(newSpeed == 0) {
